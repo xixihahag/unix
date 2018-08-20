@@ -1,0 +1,9 @@
+gcc myserver.c str_echo.c my_unp.c my_err.c -o server -lpthread
+
+gcc myclient-easy.c my_unp.c my_err.c -o client
+
+gcc myclient.c str_cli.c my_unp.c my_err.c -o client -lpthread
+
+./server
+
+./client 127.0.0.1

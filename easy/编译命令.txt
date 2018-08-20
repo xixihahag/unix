@@ -1,0 +1,7 @@
+gcc myclient-easy.c my_unp.c my_err.c -o client
+
+gcc myserver.c my_unp.c my_err.c -o server
+
+./server
+
+./client 127.0.0.1
